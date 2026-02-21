@@ -38,7 +38,9 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
+    'djoser',
     'newthing',
+    'appreal',
 ]
 
 MIDDLEWARE = [
@@ -76,11 +78,18 @@ WSGI_APPLICATION = 'newthing.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',   # PostgreSQL engine
+        'NAME': 'djangothingy',                      # database name
+        'USER': 'djangothingy_user',                 # username
+        'PASSWORD': 'ehzS1pREW4fCAnyr8eGZJrE2kzYVcAdA',  # password
+        'HOST': 'dpg-d6cilt7gi27c7381kivg-a.singapore-postgres.render.com',  # server host
+        'PORT': '5432',                              # default PostgreSQL port
+
+        'OPTIONS':{
+            'sslmode': 'require',
+        }
     }
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/6.0/ref/settings/#auth-password-validators
