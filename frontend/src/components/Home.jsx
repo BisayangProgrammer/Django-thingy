@@ -39,7 +39,7 @@ export default function Home() {
 
   if (loading) return (
     <div className="flex items-center justify-center min-h-[400px]">
-      <div className="animate-pulse text-slate-400 font-medium">Loading Solace Coalition Intelligence...</div>
+      <div className="animate-pulse text-slate-400 font-medium">Loading Solace Coalition...</div>
     </div>
   );
 

@@ -21,7 +21,7 @@ export default function MainLayout({ children, activeTab, setActiveTab }) {
                 className="w-8 h-8 object-contain" 
               />
             </div>
-            <span className="font-bold text-[#1A1F36] text-lg tracking-tight">SolaceCoalition</span>
+            <span className="font-bold text-[#1A1F36] text-lg tracking-tight">Solace Coalition</span>
           </div>
           
           <nav className="flex-1 px-4 space-y-1">

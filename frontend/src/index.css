@@ -1,3 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+* {
+    cursor: url('/Pickaxe.cur') 0 0, auto;
+  }

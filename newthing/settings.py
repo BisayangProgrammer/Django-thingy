@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-ctkbmou=zh^ke&h2i)3(prt4g0$(o$24^1t06baoht2ui9%5$z
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -56,6 +56,7 @@ MIDDLEWARE = [
 
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:5173",
+    "http://192.168.1.173:5173",
 ]
 
 ROOT_URLCONF = 'newthing.urls'
@@ -131,3 +132,6 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/6.0/howto/static-files/
 
 STATIC_URL = 'static/'
+#for any niggas wanna run this shit do type in the terminal "python manage.py runserver 0.0.0.0:8000"
+#For the app thingy do "npm run dev"
+#btw both needed to be on for it to work
